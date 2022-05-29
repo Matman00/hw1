@@ -1,0 +1,156 @@
+body{
+  margin:0;
+  font-family: 'Acme', sans-serif;
+  background-image: linear-gradient(to top, #413d38 0%, #af9473  50%, #f1cfa5 100%);
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+.hidden{
+  display:none;
+}
+header{
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top:0;
+  display:flex;
+  background-color: #e6dfd6;
+  align-items:center;
+  justify-content: space-between;
+
+}
+header div{
+  display: flex;
+  margin-right: 20%;
+}
+header .navigation{
+  width: 20%;
+  justify-content: space-around;
+
+  margin-right: 0;
+  margin-left: 20%;
+}
+header .navigation a{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #c9b8a7;
+}
+
+header .navigation a:hover, .carrello button:hover{
+  animation: ani9 0.4s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+header input, header button{
+  height: 30px;
+  border:none;
+  outline: none;
+  background-color: white;
+}
+button i{
+  font-size: 16px;
+}
+section{
+  margin:2% 15%;
+  background-color: #9f9386;
+  padding:20px;
+  border-radius: 20px;
+}
+
+section .box_product {
+  display: flex;
+
+  margin-bottom: 70px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+
+}
+section  .box_product .frist{
+
+  width: 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section  .box_product   .frist img{
+ height:400px;
+ width: 95%;
+ border-radius: 5px;
+ object-fit: cover;
+}
+section  .box_product .info_ordini_box{
+  width: calc(70% - 100px);
+  margin:0px 50px;
+
+}
+section  .box_product .info_ordini_box .box_info_scrittura {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+section  .box_product .info_ordini_box .box_info_scrittura p{
+  margin:10px;
+  margin-bottom: 0;
+  font-size: 0.85em;
+}
+section  .box_product  .info_ordini_box .box_info_scrittura h2{
+  margin:10px;
+}
+section .box_info_scrittura div{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section .box_info_scrittura .carrello{
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-end;
+
+}
+.carrello input{
+  margin:0px 35px 10px;
+  width: 70px;
+  border-radius: 2px;
+  border:none;
+}
+.carrello input:focus{
+  outline:none;
+}
+.carrello button{
+  margin:10px 35px;
+  width: 150px;
+  border:none;
+}
+.quantita{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width:700px){
+  section{
+    margin:2%;
+  }
+}
+@media (max-width:400px){
+  
+}

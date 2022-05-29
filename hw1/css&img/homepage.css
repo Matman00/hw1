@@ -1,0 +1,566 @@
+body {
+  margin: 0;
+  font-family: 'Acme', sans-serif;
+background-image: linear-gradient(to top, #413d38 0%, #af9473  50%, #f1cfa5 100%);
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.login-text {
+  width: 100%;
+  height: 470px;
+  background-color: rgba(255, 187, 0, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 187, 0, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  position: absolute;
+  top: -470px;
+  box-sizing: border-box;
+  padding: 6%;
+  transition: all 0.5s ease-in-out;
+  z-index: 11;
+}
+
+.text {
+  margin-left: 20px;
+  color: #fff;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.text .aas a, a:visited {
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.text hr {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.text input {
+  margin-top: 30px;
+  height: 40px;
+  width: 300px;
+  border-radius: 2px;
+  border: none;
+  background-color: #444;
+
+  outline: none;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.text input[type=text] {
+  margin-top: 30px;
+}
+.text .error{
+  box-shadow:  2px  2px 5px red,
+              -2px -2px 5px red,
+               2px -2px 5px red,
+              -2px  2px 5px red;
+}
+
+.text button {
+  margin-top: 40px;
+  height: 40px;
+  width: 300px;
+  outline: none;
+}
+
+.text .submit-btn {
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  color: #696a86;
+}
+
+.aas {
+  display: flex;
+}
+
+.aas div {
+  margin-right: 50px;
+}
+.aas div #signup{
+  color:#ababab;
+}
+
+.cta {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(255, 229, 101);
+  border: 2px solid transparent;
+  position: absolute;
+  bottom: -40px;
+  left:90px;
+  left: calc(50% - 60px);
+  outline: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.show-hide {
+  display: block;
+}
+
+.expand {
+  transform: translateY(400px);
+}
+
+.login-text .form_signin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 47%;
+}
+
+.login-text .form_signin input {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.login-text .form_signin .submit-btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover{
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+a, footer p, footer h2, .testo_feed, header #testo_header {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, .argomento, .box_argomento .servizi, .footer_box {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(./img/background.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+header .option {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 30px;
+  display: none;
+}
+
+header .option .linea {
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 178, 60);
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header #testo_header {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 3em;
+  text-align: center;
+}
+
+header nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav #menu {
+  margin: 50px;
+  font-size: 20px
+}
+
+header nav a {
+  margin: 20px;
+  background-color: rgba(255, 178, 60, 0.7);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+header #logo {
+  width: 175px;
+  margin: 5px 0 0 20px;
+}
+
+.argomento, .servizi, .titolo_argomento, .box_argomento {
+  border-radius: 20px;
+}
+
+.argomento {
+  background-color: rgb(246, 233, 255);
+  margin: 5%;
+}
+
+.titolo_argomento h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.box_argomento {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.servizi_img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.servizi h2 {
+  text-align: center;
+}
+
+.servizi p {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+.box_argomento .servizi {
+  align-items: center;
+  width: 100%;
+}
+
+#collab_prev1:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modale {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modale .container_prev {
+  background-color: rgb(234, 230, 255);
+  display: flex;
+  height: 80%;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.container_prev #form {
+  display: flex;
+  height: 90%;
+  width: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#checkbox {
+  display: none;
+}
+
+#form .form_input {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form_input label {
+  font-size: 0.8em;
+}
+
+.form_input select {
+  border: none;
+}
+
+.form_input select:focus {
+  outline: none;
+}
+
+.form_input input {
+  border: 0;
+  border-bottom: 1px solid rgb(33, 33, 33);
+  background-color: transparent;
+}
+
+.form_input input:focus {
+  outline: none;
+  background-color: rgb(230, 241, 255);
+  border-color: rgb(150, 166, 254);
+}
+
+.form_input textarea {
+  resize: none;
+  height: 50px;
+  outline: none;
+  border: none;
+}
+
+.form_input textarea:focus, select:focus {
+  border: 1px solid rgb(150, 166, 254);
+}
+
+.form_input button {
+  border: none;
+  height: 30px;
+  background-color: rgb(213, 213, 213)
+}
+
+.form_input button:hover {
+  background-color: rgb(194, 221, 255);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(60, 66, 78);
+  height: 35vh;
+  justify-content: space-around;
+}
+
+.footer_box {
+  margin: 10px;
+  width: 20%;
+}
+
+.footer_content {
+  display: flex;
+  align-items: center;
+}
+
+.footer_box img {
+  width: 30px;
+}
+
+#text_footer {
+  color: rgb(205, 205, 205);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.insta_box {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.testo_feed {
+  width: 100%;
+  height: 20%;
+}
+
+.testo_feed h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.feed {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feed div {
+  display: flex;
+  height: 100%;
+  width: calc(33.3% - 2px);
+  margin: 1px;
+  margin-bottom: 2px;
+}
+
+.feed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:900px) {
+  header nav #menu {
+    display: none;
+  }
+  .aas{
+    margin-top: 50px;
+  }
+  .cta{
+    bottom: -35px;
+  }
+  button:hover{
+    animation:none;
+  }
+  header nav #container_menu #menu_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modale {
+    top: 0;
+  }
+
+  header nav #container_menu #menu_mobile a {
+    margin: 10px;
+    background-color: rgba(255, 178, 60, 0.7);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .modale .container_prev {
+    width: 50%;
+    height: 90%;
+  }
+
+  header .option {
+    display: flex;
+  }
+
+  header .logo {
+    width: 50px;
+  }
+
+  header #logo {
+    width: 125px;
+  }
+
+  .box_argomento {
+    flex-direction: column;
+  }
+
+  .servizi_img {
+    margin-top: 25px;
+  }
+
+  .servizi p {
+    margin-top: 0px;
+  }
+
+  .servizi h2 {
+    margin-bottom: 0px;
+  }
+
+  footer {
+    height: 100vh;
+  }
+
+  .footer_box {
+    width: 30%;
+    margin: 0;
+  }
+
+  .insta_box {
+    height: 35vh;
+  }
+
+  .feed div {
+    width: 45%;
+  }
+}
+
+@media (max-width:400px) {
+  .container_prev {
+    width: 100%;
+    height: 100%;
+  }
+
+  header .option {
+    display: flex;
+  }
+
+  header .logo {
+    width: 50px;
+  }
+
+  header #logo {
+    width: 125px;
+  }
+
+  .box_argomento {
+    flex-direction: column;
+  }
+
+  .servizi_img {
+    margin-top: 25px;
+  }
+
+  .servizi p {
+    margin-top: 0px;
+  }
+
+  .servizi h2 {
+    margin-bottom: 0px;
+  }
+
+  .modale .container_prev {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 150vh;
+  }
+
+  .footer_box {
+    margin: 30px;
+    width: auto;
+  }
+}

@@ -1,0 +1,293 @@
+body{
+  margin:0;
+  letter-spacing: 1px;
+  font-size: 16px;
+  overflow: auto;
+  font-family: 'Acme', sans-serif;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+.hidden{
+  display:none;
+}
+.contenitore{
+  display:flex;
+  flex-direction: row;
+  background-color:#c9b8a7;
+}
+.zona_profilo{
+  display: flex;
+  position: sticky;
+  top:0;
+  width: 30vw ;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.zona_profilo .option{
+  margin-top:70px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.zona_profilo .option a{
+
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.contenuto{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e6dfd6;
+  height:auto;
+}
+.contenuto header{
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:flex-end;
+  width: calc(100% - 50px);
+  height: 8vh;
+  margin-right: 50px;
+}
+.contenuto header a{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #c9b8a7;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.contenuto header img{
+  height: 25px;
+  width: 25px;
+
+}
+.contenuto .titolo{
+  font-size: 3.5em;
+}
+.contenuto .box_contenuto {
+  margin:0px 100px 0px 100px;
+
+}
+.contenuto .box_contenuto  .box{
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.contenuto .box_contenuto .account_settings_box .box .inner_box_account{
+  border:solid 2px rgb(154, 154, 154);
+  width: 40%;
+  margin-bottom: 30px;
+}
+.contenuto .box_contenuto .account_settings_box .box .inner_box_account p{
+  margin:0px 0px 0px 40px;
+}
+.contenuto .box_contenuto .account_settings_box .box{
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.contenuto .box_contenuto .account_settings_box .box .inner_box_address, #add_address{
+
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  width: 40%;
+  height: 150px;
+  margin-bottom: 30px;
+  background-color:#0f0e0d;
+  color: white;
+  box-shadow: 10px 10px 15px  rgb(45, 45, 45);
+}
+#add_address{
+  background-color: #c9b8a7;
+  align-items: center;
+}
+#add_address i{
+  font-size: 4em;
+  color:rgba(255, 255, 255, 0.54)
+}
+
+.contenuto .box_contenuto .account_settings_box .box .inner_box_address p{
+  margin:5px 20px;
+}
+/*Indirizzo*/
+.no-scroll{
+  overflow: hidden;
+}
+.modale {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modale .container_prev {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  height: 50%;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+#form{
+
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modale .container_prev .form_indirizzo {
+
+  display: flex;
+  flex-wrap: wrap;
+  height: 70%;
+  width: 100%;
+  align-items: center;
+  justify-content:space-around;
+}
+
+#form input{
+  height: 40px;
+  width: 40%;
+  border-radius: 2px;
+  border: none;
+  background-color: #444;
+  outline: none;
+  color: #fff;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+#form button{
+  height: 40px;
+  width: 40%;
+  border-radius: 2px;
+  border: none;
+  margin-top: 20px;
+}
+#form button:hover, #add_address:hover, header a:hover, .option a:hover{
+  animation: ani9 0.4s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+
+/*fine indirizzo*/
+
+
+.contenuto .box_contenuto  .box_ordini{
+  display: flex;
+
+  height: 45vh;
+  margin-bottom: 70px;
+}
+.contenuto .box_contenuto  .box_ordini  .frist{
+  height: 100%;
+  width: 30%;
+
+}
+.contenuto .box_contenuto  .box_ordini  .frist img{
+ height: 100%;
+ width: 100%;
+}
+.contenuto .box_contenuto .box_ordini  .info_ordini_box{
+  width: calc(70% - 50px);
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.contenuto .box_contenuto .box_ordini  .info_ordini_box .box_info_scrittura p{
+  margin:0;
+  font-size: 0.85em;
+}
+.contenuto .box_contenuto .box_ordini .info_ordini_box .box_info_scrittura h2{
+  margin-top: 0;
+}
+.box_info_scrittura div{
+
+}
+.contenuto .box_contenuto .box_ordini  .info_ordini_box .more_orders{
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.contenuto .box_contenuto .box_ordini  .info_ordini_box .more_orders p{
+  margin:0;
+  margin-bottom: 5px;
+}
+.contenuto .box_contenuto .box_ordini  .info_ordini_box .more_orders .imgs{
+  display: flex;
+}
+.contenuto .box_contenuto .box_ordini  .info_ordini_box .more_orders .imgs img{
+  height: 60px;
+  width:60px;
+  margin-right: 20px;
+  object-fit: cover;
+
+}
+
+
+
+/* mobile*/
+@media (max-width:700px) {
+  .contenuto header{
+    height: 15vh;
+  }
+  .contenuto .titolo{
+    font-size: 3em;
+  }
+  .contenuto .box_contenuto  .box{
+    flex-direction: column;
+  }
+  .contenuto .box_contenuto .account_settings_box .box .inner_box_account{
+    width: 100%;
+  }
+  .contenuto .box_contenuto .account_settings_box .box .inner_box_address, #add_address{
+    width: 100%;
+  }
+  #form button:hover, #add_address:hover, header a:hover, .option a:hover{
+    animation:none;
+  }
+  .modale .container_prev{
+    height: 80vh;
+    width: 80%;
+  }
+}
+
+@media (max-width:400px) {
+
+}
